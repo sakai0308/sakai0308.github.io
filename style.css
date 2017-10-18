@@ -1,0 +1,151 @@
+@charset "UTF-8";
+
+/* 基本色 */
+:root {
+	--main-color: #5D9AB2;
+	--accent-color: #BF6A7A;
+	--dark-main-color: #2B5566;
+	--text-bright-color: #fff;
+	--icon-color: #fff;
+	--icon-bk-color: #ddd;
+	--gray-color: #ddd;
+	--large-width: 1000px;
+	--middle-width: 800px;
+}
+
+/* 基本設定： フォントサイズ */
+@media (max-width: 599px) {
+	:root {
+		font-size: 14px;
+	}
+}
+
+@media (min-width: 600px) and (max-width: 799px) {
+	:root {
+		font-size: 16px;
+	}
+}
+
+@media (min-width: 800px) {
+	:root {
+		font-size: 18px;
+	}
+}
+
+body {font-size: 16px;}
+
+/* 基本設定： ページ全体 */
+* {
+	font-family: "Sawarabi Mincho";
+}
+
+body {
+	margin: 0;
+
+	/* 画像ファイルの指定 */
+	background-image: url(img/background-photo.jpg);
+
+	/* 画像を常に天地左右の中央に配置 */
+	background-position: center center;
+
+	/* 画像をタイル状に繰り返し表示しない */
+	background-repeat: no-repeat;
+
+	/* コンテンツの高さが画像の高さより大きい時、動かないように固定 */
+	background-attachment: fixed;
+
+	/* 表示するコンテナの大きさに基づいて、背景画像を調整 */
+	background-size: cover;
+
+	/* 背景画像が読み込まれる前に表示される背景のカラー */
+	background-color: #464646;
+}
+
+a:link {color: #006F8E;}
+a:visited {color: #006F8E;}
+a:hover {color: #006F8E;}
+a:active {color: #006F8E;}
+
+pre {
+    white-space: -moz-pre-wrap; /* Mozilla */
+    white-space: -pre-wrap;     /* Opera 4-6 */
+    white-space: -o-pre-wrap;   /* Opera 7 */
+    white-space: pre-wrap;      /* CSS3 */
+    word-wrap: break-word;      /* IE 5.5+ */
+}
+
+/* コンテンツA： ヒーローイメージ */
+.conA {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	min-height: 450px;
+	color: #fff;
+	color: var(--text-bright-color);
+	text-align: center;
+	background-color: rgba( 255, 255, 255, 0.15 );
+}
+
+.conA h1 {
+	margin-top: 0;
+	margin-bottom: 10px;
+	font-size: 10vw;
+	letter-spacing: 0.2em;
+	margin-left: 0.2em;
+}
+
+.conA p {
+	margin-top: 0;
+	margin-bottom: 0;
+	font-size: 18px;
+}
+
+.conB {
+	background-color: #fff;
+	color: #888;
+}
+
+.conB .text {
+	padding: 20px;
+}
+
+.conB h2 {
+	color: #444;
+	margin-top: 0;
+	margin-bottom: 10px;
+	font-size: 20px;
+}
+
+.conB h3 {
+	color: #666;
+	font-size: 18px;
+}
+
+.conB p {
+	margin-top: 0;
+	margin-bottom: 20px;
+	font-size: 14px;
+	line-height: 1.8;
+	opacity: 0.8;
+}
+
+.conB a {
+	font-size: 14px;
+}
+
+/* フッター */
+footer {
+	background-color: #ccc;
+}
+
+footer .container {
+	padding: 40px 20px;
+}
+
+/* フッターC： コピーライト */
+.footC {
+	font-size: 12px;
+	text-align: center;
+	font-family: "Sawarabi Mincho";
+}
